@@ -4,7 +4,7 @@ Data Developers Examples and Tutorials
 
 ## Course 01: Python for Data Analysis
 
-  - Module 1: Python Basics (2 days)
+  - Module 1: Python Basics (1 day)
     - PDA 1-1: Day 01 Morning, first session (90 minutes)
       - An Overview of Python
       - Python Setup
@@ -35,20 +35,22 @@ Data Developers Examples and Tutorials
       - Using pickle
       - Working with compressed files
       - Lab 1-4
-    - PDA 1-5: Day 02 Morning, first session (90 minutes)
+
+  - Module 2: Python Beginner (1 day)
+    - PDA 2-1: Day 02 Morning, first session (90 minutes)
       - Arrays
       - Sorting
       - Array Iterators
       - Lambdas
-      - Lab 1-5
-    - PDA 1-6: Day 02 Morning, second session (90 minutes)
+      - Lab 2-1
+    - PDA 2-2: Day 02 Morning, second session (90 minutes)
       - Dictionaries
       - Dictionary Iterators
       - Dictionary Sorting
       - Sets
       - Testing for existence
-      - Lab 1-6
-    - PDA 1-7: Day 02 Afternoon, first session (90 minutes)
+      - Lab 2-2
+    - PDA 2-3: Day 02 Afternoon, first session (90 minutes)
       - Errors and Exception Handling
       - Writing tests
       - Functions
@@ -60,35 +62,84 @@ Data Developers Examples and Tutorials
         - Documentation best practices
       - Modules
       - Packages
-      - Lab 1-7
-    - PDA 1-8: Day 02 Afternoon, second session (90 minutes)
+      - Lab 2-3
+    - PDA 2-4: Day 02 Afternoon, second session (90 minutes)
       - Logging
       - Working with the filesystem
       - Working with processes
       - Advanced scripting: CLI params and parsing
       - Distribution of code
-      - Lab 1-8
+      - Lab 2-4
 
-  - Module 2: Python for Data Acquisition (1 day)
-    - PDA 2-1: Day 03 Morning, first session (90 minutes)
+  - Module 3: Python for Data Acquisition (1 day)
+    - PDA 3-1: Day 03 Morning, first session (90 minutes)
       - Introduction to NumPy
       - n-d array
       - Structured arrays
       - Masked arrays (handling missing data)
-      - Lab 2-1
-    - PDA 2-2: Day 03 Morning, second session (90 minutes)
+      - Lab 3-1
+    - PDA 3-2: Day 03 Morning, second session (90 minutes)
       - Broadcasting
       - Vectorization
       - Random Number Generation
       - Monte Carlo Simulation
-      - Lab 2-2
-    - PDA 2-3: Day 03 Afternoon, first session (90 minutes)
+      - Lab 3-2
+    - PDA 3-3: Day 03 Afternoon, first session (90 minutes)
       - Beautiful soup for web scraping
       - Web spider with scrapy
-      - Lab 2-3
-    - PDA 2-4: Day 03 Afternoon, second session (90 minutes)
+      - Lab 3-3
+    - PDA 3-4: Day 03 Afternoon, second session (90 minutes)
       - Requests module to consume REST APIs
       - Working with JSON
       - Working with XML
       - Working with YAML
-      - Lab 2-4
+      - Lab 3-4
+
+  - Module 4: Python for Data Cleaning and Preparation (1 day)
+    - PDA 4-1: Day 04 Morning, first session (90 minutes)
+      - Introduction to pandas
+      - Data Types in pandas
+      - Working with Series
+      - Lab 4-1
+    - PDA 4-2: Day 04 Morning, second session (90 minutes)
+      - Pandas I/O: CSV,Excel,datareader
+      - Data Frames Introduction
+      - Subsetting Data Frames
+      - Dealing with missing data
+      - Identifying duplicates
+      - Lab 4-2
+    - PDA 4-3: Day 04 Afternoon, first session (90 minutes)
+      - Merging data frames
+      - Dummy coding
+      - Discretization of continuous data
+      - Scaling and standardization data
+      - Lab 4-3
+    - PDA 4-4: Day 04 Afternoon, second session (90 minutes)
+      - Aggregations "Group by"
+      - Pivot tables
+      - Stacking and melting
+      - Pandas string methods and regular expressions
+      - Lab 4-4
+
+  - Module 5: Data Exploration and Visualization (1 day)
+    - PDA 5-1: Day 05 Morning, first session (90 minutes)
+      - Summarization: Univariate and Multi-variate
+      - Detecting Outliers
+      - Visualization with Matplotlib and Seaborn
+      - Lab 5-1
+    - PDA 5-2: Day 05 Morning, second session (90 minutes)
+      - Visualization: histograms, bar, and box plots
+      - Visualization: scatter plots and pie charts
+      - Visualization: Group-by plotting
+      - Lab 5-2
+    - PDA 5-3: Day 05 Afternoon, first session (90 minutes)
+      - Hypothesis testing
+      - P-values
+      - Group comparisons: T-tests, ANOVA, Chi-square
+      - Lab 5-3
+    - PDA 5-4: Day 05 Afternoon, second session (90 minutes)
+      - Correlation
+      - Distance Measures
+      - Stochastic processes and Poisson processes
+      - Simulations and generating synthetic data
+      - Lab 5-4
