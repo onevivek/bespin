@@ -2,6 +2,7 @@
 
 Data Developers Examples and Tutorials
 
+
 ## Course 01: Python for Data Analysis
 
   - Module 1: Python Basics (1 day)
@@ -142,4 +143,119 @@ Data Developers Examples and Tutorials
       - Distance Measures
       - Stochastic processes and Poisson processes
       - Simulations and generating synthetic data
+      - Lab 5-4
+
+
+## Course 02: Introduction to Data Science
+
+  - Module 1: Data Science Basics (1 day)
+    - PDA 1-1: Day 01 Morning, first session (90 minutes)
+      - Python refresher: Data Types, Lists etc.
+      - Jupyter and PyCharm
+      - NumPy
+      - Pandas
+      - SciPy
+      - Lab 1-1 (mostly check setup and packages)
+    - PDA 1-2: Day 01 Morning, second session (90 minutes)
+      - Statistics Overview
+      - Hypothesis testing
+      - Statistical tests: p-values, ANOVA, Chi-squared, T-Tests
+      - Correlations
+      - Distance Measures
+      - Lab 1-2
+    - PDA 1-3: Day 01 Afternoon, first session (90 minutes)
+      - Uniform Distribution
+      - Poisson Distribution
+      - Students T Distribution
+      - Exponential Distribution
+      - Normal Distribution
+      - Lab 1-3
+    - PDA 1-4: Day 01 Afternoon, second session (90 minutes)
+      - SciPy: Linear Algebra primer
+      - Matrix Transformation
+      - Matrix Decomposition
+      - Principal Component Analysis
+      - Lab 1-4
+
+  - Module 2: Data Science Beginner (1 day)
+    - PDA 2-1: Day 02 Morning, first session (90 minutes)
+      - Linear Regression theory
+      - Linear Regression in Python
+      - Linear Regression Visualization
+      - Cross Validation
+      - Generalized Linear Models
+      - Lab 2-1
+    - PDA 2-2: Day 02 Morning, second session (90 minutes)
+      - Step regression
+      - Lasso and penalized regression
+      - Ridge Regression
+      - ElasticNet Regression
+      - Selecting the correct regression model (Mallow's Cp criterion)
+      - Lab 2-2
+    - PDA 2-3: Day 02 Afternoon, first session (90 minutes)
+      - Logistic Regression
+      - Confusion Matrix
+      - Multinomial Logistic Regression
+      - Panel Models
+      - Penalized Logistic Regression
+      - Lab 2-3
+    - PDA 2-4: Day 02 Afternoon, second session (90 minutes)
+      - Naive Bayes
+      - K-NN
+      - Lab 2-4
+
+  - Module 3: Data Science Intermediate (1 day)
+    - PDA 3-1: Day 03 Morning, first session (90 minutes)
+      - Decision Trees
+      - Random Forests
+      - Lab 3-1
+    - PDA 3-2: Day 03 Morning, second session (90 minutes)
+      - Refresher of PCA
+      - SVM
+      - Lab 3-2
+    - PDA 3-3: Day 03 Afternoon, first session (90 minutes)
+      - Centroid-based clustering: K-Means clustering
+      - Density-based: DBSCAN
+      - Distribution-based: Expectation-Maximization Algorithm
+      - Evaluation: Davies-Bouldin index, and Dunn index
+      - Lab 3-3
+    - PDA 3-4: Day 03 Afternoon, second session (90 minutes)
+      - Connectivity-based: Hierarchical clustering
+      - Graph-based clustering: Highly connected sub-graphs
+      - Lab 3-4
+
+  - Module 4: Text Analytics (1 day)
+    - PDA 4-1: Day 04 Morning, first session (90 minutes)
+      - Introduction to text analytics
+      - NLTK primer and usage
+      - Lab 4-1
+    - PDA 4-2: Day 04 Morning, second session (90 minutes)
+      - Text Regularization and Summarization
+      - Lab 4-2
+    - PDA 4-3: Day 04 Afternoon, first session (90 minutes)
+      - Text Sentiment Analysis
+      - Lab 4-3
+    - PDA 4-4: Day 04 Afternoon, second session (90 minutes)
+      - Text Topic Extraction
+      - Lab 4-4
+
+  - Module 5: Time-series Analysis (1 day)
+    - PDA 5-1: Day 05 Morning, first session (90 minutes)
+      - Box-Jenkins
+      - Time-series smoothing
+      - Time-series visualization
+      - Lab 5-1
+    - PDA 5-2: Day 05 Morning, second session (90 minutes)
+      - Stationarity
+      - Periodicity
+      - Pattern Mining
+      - Lab 5-2
+    - PDA 5-3: Day 05 Afternoon, first session (90 minutes)
+      - Time-series Regression
+      - Forecasting with ARIMA
+      - Lab 5-3
+    - PDA 5-4: Day 05 Afternoon, second session (90 minutes)
+      - Non-stationary time series analysis (ARCH-GARCH)
+      - State-space models (Kalman filters)
+      - Hidden Markov Models
       - Lab 5-4
