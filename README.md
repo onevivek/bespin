@@ -24,10 +24,8 @@ Data Developers Examples and Tutorials
   - Install python version and check installation
     ```
       which pyenv
-      pyenv list
       pyenv --version
       pyenv install 3.9.2
-      pyenv --version
       pyenv local 3.9.2
     ```
 
@@ -56,12 +54,13 @@ Data Developers Examples and Tutorials
       gcloud auth login
     ```
   - Step 5: Run gcloud command to set the project
-    - Note: Get the project ID from the Google Cloud Console (select the project you want)
+    - Note: Get the project ID from the Google Cloud Console Home -> Dashboard
             The project ID is the text ID of the project.
     ```
       gcloud config set project PROJECT-ID
     ```
-  - Step 6: List the GCP regions and zones (this tests that the gcloud is setup correctly)
+  - Step 6: List the GCP regions and zones
+    - Note: this tests that the gcloud is setup correctly
     ```
       gcloud compute zones list
       gcloud compute regions list
@@ -87,15 +86,6 @@ Data Developers Examples and Tutorials
       terraform -install-autocomplete
     ```
 
-
-## Terraform Installation and Checking Installation
-
-  - Install Terraform using Homebrew
-    ```
-      brew tap hashicorp/tap
-      brew install hashicorp/tap/terraform
-      brew upgrade hashicorp/tap/terraform
-    ```
   - Check installation by running through the tutorial with Docker
     - Note: This tutorial requires Docker to be installed
     - See [Terraform Tutorial: https://learn.hashicorp.com/tutorials/terraform/install-cli](https://learn.hashicorp.com/tutorials/terraform/install-cli)
