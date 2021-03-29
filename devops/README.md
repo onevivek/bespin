@@ -36,7 +36,7 @@ Configuring the local environment and tools for python, gcp, and terraform setup
     ```
       brew install --cask google-cloud-sdk
     ```
-  - Or Step 1a: Re-install Google Cloud SDK via Homebrew
+  - Or Step 1b: Re-install Google Cloud SDK via Homebrew
     ```
       brew reinstall google-cloud-sdk
     ```
@@ -64,6 +64,22 @@ Configuring the local environment and tools for python, gcp, and terraform setup
     ```
       gcloud compute zones list
       gcloud compute regions list
+    ```
+  - Step 7: Create a local settings directory for GCP
+    ```
+      mkdir ~/.gcp
+    ```
+  - Step 8: Save the creedentials file and project environment file to the local settings directory
+    - Login to the GCP cloud console and create a credentials file and download it as a JSON file
+    - Place the downloaded JSON credentials file to the local settings directory for GCP (~/.gcp)
+    - Create an environment file (name it as PROJECTID-env.sh) in the local settings directory for GCP (~/.gcp)
+        and place the following in there (select a GCP region and zone from the command output above).
+      Note: substitute the CREDENTIALS_FILE, PROJECTID, GCP_REGION, and GCP_ZONE with actual values below.
+    ```
+      export TF_VAR_gcp_credentials_file=${HOME}/.gcp/CREDENTIALS_FILE.json
+      export TF_VAR_gcp_project=PROJECTID
+      export TF_VAR_gcp_region=GCP_REGION
+      export TF_VAR_gcp_zone=GCP_ZONE
     ```
 
 
