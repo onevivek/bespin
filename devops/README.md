@@ -123,3 +123,10 @@ Configuring the local environment and tools for python, gcp, and terraform setup
   - Check installation by running through the tutorial with Docker
     - Note: This tutorial requires Docker to be installed
     - See [Terraform Tutorial: https://learn.hashicorp.com/tutorials/terraform/install-cli](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+
+
+## GCP Terraform Modules
+
+  - See [https://github.com/terraform-google-modules](https://github.com/terraform-google-modules)
+  - For GKE and with several examples:
+    - See [https://github.com/terraform-google-modules/terraform-google-kubernetes-engine](https://github.com/terraform-google-modules/terraform-google-kubernetes-engine)
