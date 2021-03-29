@@ -112,8 +112,9 @@ Configuring the local environment and tools for python, gcp, and terraform setup
 
   - Check Terraform Installation
     ```
-      terraform --help
+      terraform --version
     ```
+    Note: make sure that the Terraform version is v0.14.9
 
   - Install Terraform Autocomplete for bash or zsh
     ```
