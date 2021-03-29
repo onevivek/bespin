@@ -83,6 +83,24 @@ Configuring the local environment and tools for python, gcp, and terraform setup
     ```
 
 
+## GCP gcloud commands
+
+  - Get list of available GKE cluster versions by region
+    ```
+      gcloud container get-server-config --region us-west1
+    ```
+
+  - Get list of available GKE cluster versions by zone
+    ```
+      gcloud container get-server-config --zone us-west1-a
+    ```
+
+  - Get list of running GKE clusters
+    ```
+      gcloud container clusters list 
+    ```
+
+
 ## Terraform Installation and Configuraiton
 
   - Install Terraform using Homebrew
