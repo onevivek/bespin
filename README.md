@@ -5,4 +5,4 @@ Bespin Code and DevOps Repository.
 
 ## DevOps
 
-  - See [./devops/CONFIGURATION.md](./devops/CONFIGURATION.md) for details.
+  - See [./devops/README.md](./devops/README.md) for details.
