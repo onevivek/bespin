@@ -1,0 +1,30 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: nylas-lite-gmail
+  labels:
+    app: nylas-lite-gmail
+spec:
+  schedule: "*/1 * * * *" # every minute
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          runtimeClassName: gvisor
+          containers:
+            - name: nylas-lite-gmail
+              command: ["./main"]
+              image: "gcr.io/nylas-gcp/nylas-lite-gmail:945a2e365dbca601b4f41247df8629f2dd66cdf6"
+              imagePullPolicy: "IfNotPresent"
+              env:
+                - name: GMAIL_ACCESS_TOKEN
+                  value: "ya29.a0AfH6SMBHLXeYz02w464T3LRzMzB8w6lij1_rpJPfvj9EGGt6V4m59gUftYWrJdrCT3V2q2hhuRsB72FBj7q736576xWHkRGJ2Emb0rms3iv8X2nQJmCck_jWjs7BX0KGp_aZ9VWKA0pVrTkEEvANAkHB1sRR"
+                - name: GMAIL_REDIS_ADDRESS
+                  value: "redis:6379"
+                - name: GMAIL_ACCOUNT_ID
+                  value: "1"
+                - name: GMAIL_HISTORIC_SYNC_DAYS
+                  value: "10"
+---

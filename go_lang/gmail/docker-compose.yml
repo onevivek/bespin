@@ -1,0 +1,40 @@
+version: "3.5"
+services:
+  nylas-lite-gmail:
+    container_name: nylas-lite-gmail
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    volumes:
+    - ./:/src
+    environment:
+#      you can find a valid token at https://developers.google.com/oauthplayground
+      GMAIL_ACCESS_TOKEN: "ya29.a0AfH6SMAnbUOSB2gjxpYs0vB5MJBLtSMcoNbkwPFGgQE0G6oadJZUMd0DxrtnaNbgEGgFdZCVt_XMFyg38fb3q-8Due8j26cDCtt06kBF6SzeiG1UZxgsZsSt-PAJ7CgvflXEEEsiE7opFwJEVUxGqf1j8pif"
+      GMAIL_REDIS_ADDRESS: "redis:6379"
+      GMAIL_ACCOUNT_ID: "1"
+      GMAIL_HISTORIC_SYNC_DAYS: 10
+      GMAIL_BATCH_TIMEOUT: 15
+    command: go run main.go
+    depends_on:
+      - redis-populate
+  redis-populate:
+    image: alpine:3.13
+    command:
+      - /bin/sh
+      - -c
+      - |
+        apk --update add redis
+        redis-cli -h redis hset account:1 status "pending"
+        exit
+    depends_on:
+      - redis
+  redis:
+    image: redis:6
+  debug:
+    image: alpine:3.13
+    command:
+      - /bin/sh
+      - -c
+      - |
+        apk --update add redis
+        sleep 999999

@@ -1,0 +1,31 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: nylas-lite-gmail
+  labels:
+    app: nylas-lite-gmail
+spec:
+  template:
+    metadata:
+      labels:
+        app: nylas-lite-gmail
+    spec:
+      restartPolicy: OnFailure
+      runtimeClassName: gvisor
+      containers:
+        - name: nylas-lite-gmail
+          command: ["./main"]
+          image: "gcr.io/nylas-gcp/nylas-lite-gmail:61739d2b151b6e6f7ae1d9544097729582a0bd33"
+          imagePullPolicy: "Always"
+          env:
+            - name: GMAIL_ACCESS_TOKEN
+              value: "ya29.a0AfH6SMBekdLrMr-XU_0nBl_91-w6BlcC_G4HMWCLTKm75738o7nQpIp8hgVH1WrQrE4qqFBg-Cx4ALEMPEThN02wm-HcsQK9EOYkBT9CRlB1FRFBQh1NzjVQGnwuxu_jGhFrJMZGSMF-tUfGazvThI-IMmfMYg"
+            - name: GMAIL_REDIS_ADDRESS
+              value: "redis.redis.svc.cluster.local:6379"
+            - name: GMAIL_ACCOUNT_ID
+              value: "1"
+            - name: GMAIL_HISTORIC_SYNC_DAYS
+              value: "10"
+            - name: GMAIL_BATCH_TIMEOUT
+              value: "15"
+---
