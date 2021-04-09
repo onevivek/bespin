@@ -1,0 +1,6 @@
+.git/
+.github/
+bin/
+docker/
+examples/
+k8s/
